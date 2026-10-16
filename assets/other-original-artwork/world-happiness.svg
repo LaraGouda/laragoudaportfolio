@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" shape-rendering="crispEdges">
+  <title>Original pixel globe illustration for World Happiness</title>
+  <path fill="#e4ebdc" d="M0 0h320v240H0z"/>
+  <path fill="#a7c4c4" d="M120 24h80v8h24v16h16v24h8v80h-8v24h-16v16h-24v8h-80v-8H96v-16H80v-24h-8V72h8V48h16V32h24z"/>
+  <path fill="#d1dfd1" d="M88 80h144v4H88zm-8 36h160v4H80zm16 36h128v4H96z"/>
+  <path fill="#71976b" d="M112 48h40v16h-16v16h-16v16h-24V72h16zm16 56h24v16h16v24h-8v32h-16v-24h-16zm56-56h24v16h16v24h-24V72h-16zm0 48h40v16h16v32h-16v16h-16v-24h-24z"/>
+  <path fill="#55744f" d="M72 48h8v136h16v8h16v8h88v-8h16v-8h16v-16h8v-16h8v16h-8v24h-16v16h-24v8h-32v8h40v8H112v-8h40v-8h-40v-8H88v-16H72v-24h-8V64h8z"/>
+  <path fill="#e5bf67" d="M260 48h8V36h8v12h12v8h-12v12h-8V56h-8zM32 128h8v-8h8v8h8v8h-8v8h-8v-8h-8z"/>
+</svg>

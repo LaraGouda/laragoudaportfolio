@@ -1,14 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="day">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4e9">
+  <meta name="description" content="Explore Lara Gouda’s little corner of the internet. Computer Science at Stony Brook University, software projects, research, and campus adventures.">
+  <meta property="og:title" content="Lara Gouda | Portfolio">
+  <meta property="og:description" content="Building useful things and exploring one block at a time. Discover my projects and journey at Stony Brook University.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lara-gouda-portfolio.balmystork16.chatgpt.site">
+  <meta property="og:image" content="https://lara-gouda-portfolio.balmystork16.chatgpt.site/assets/other-original-artwork/overworld.svg">
+  <meta name="color-scheme" content="light dark">
+  <title>Lara Gouda | Portfolio</title>
+  <link rel="icon" href="assets/other-original-artwork/flower.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <main>
-    <h1 class="center-container">Work In Progress for CSE 300...</h1>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-wrap container">
+      <a class="brand" href="#home" aria-label="Lara Gouda, home">
+        <img src="assets/other-original-artwork/flower.svg" width="28" height="36" alt="">
+        <span>Lara Gouda</span>
+      </a>
+      <nav class="navigation" id="navigation" aria-label="Main navigation">
+        <a class="nav-link active" href="#home" aria-current="location">Home</a>
+        <a class="nav-link" href="#about">About Me</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-resume button button-secondary" href="assets/LaraGoudaSWE%20-portfolio.pdf" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 2h8v2h2v2h2v12H4Zm2 2v12h8V8h-4V4Zm6 1v1h1ZM7 10h6v2H7Zm0 3h6v1H7Z"/></svg>
+          Resume
+        </a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to night mode" aria-pressed="false"><svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 8h6v1h1v6h-1v1H9v-1H8V9h1ZM11 1h2v4h-2Zm0 18h2v4h-2ZM1 11h4v2H1Zm18 0h4v2h-4ZM4 3l3 3-1 2-3-3Zm13 14 3 3 1-2-3-3ZM3 19l3-3 2 1-3 3ZM17 7l3-3-1-1-3 3Z"/></svg><svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 2h5v2h-3v3H9v7h2v2h7v-2h3v5h-3v2H7v-2H4v-3H2V7h2V4h5Z"/></svg></button>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="navigation" aria-expanded="false" aria-label="Open navigation"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="sky-stars" aria-hidden="true"></div>
+      <div class="cloud cloud-one" aria-hidden="true"></div><div class="cloud cloud-two" aria-hidden="true"></div><div class="cloud cloud-three" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow welcome"><span class="little-spark" aria-hidden="true">✦</span> WELCOME TO MY LITTLE WORLD</p>
+          <h1 id="hero-title">Hi, I'm <span>Lara!</span></h1>
+          <p class="hero-degree">Computer Science <span>@</span> Stony Brook University</p>
+          <p class="hero-description">I love building things, figuring out how technology works, and finding ways to use what I've learned to help other people.</p>
+          <div class="hero-buttons">
+            <a class="button button-primary" href="#about"><span>Explore My Builds &amp; Get to Know Me</span><span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-socials"><a href="https://github.com/LaraGouda" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3 19v-3c-3 1-4-2-4-2l-1-1c2-1 2 3 5 2v-2c-3 0-5-2-5-4 0-2 1-3 2-4V4l3 2h6l3-2v3c1 1 2 2 2 4 0 2-2 4-5 4v6A10 10 0 0 0 12 2Z"/></svg>GitHub <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/lara-gouda/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h18v18H3Zm3 6v9h3V9Zm1-4v2h2V5Zm4 4v9h3v-5c0-2 3-2 3 0v5h2v-6c0-4-4-4-5-2V9Z"/></svg>LinkedIn <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <figure class="player-portrait">
+          <div class="portrait-window">
+            <div class="portrait-label"><span class="status-dot" aria-hidden="true"></span> PLAYER 01: LARA</div>
+            <div class="portrait-photo">
+              <!-- PHOTO: change this src to use a different headshot. -->
+              <img class="profile-image" id="profile-image" src="assets/headshot.png" alt="Portrait of Lara Gouda" width="360" height="360" fetchpriority="high">
+            </div>
+            <img class="portrait-decoration pixel-art" src="assets/portrait-frame.png" alt="" width="1254" height="1254" fetchpriority="high">
+          </div>
+          <div class="portrait-stats"><span aria-hidden="true">♥ ♥ ♥</span><span>CLASS OF 2028</span></div>
+        </figure>
+      </div>
+      <img class="overworld" src="assets/other-original-artwork/overworld.svg" alt="" width="1600" height="340">
+      <a class="scroll-cue" href="#about">THERE'S MORE TO EXPLORE <span aria-hidden="true">↓</span></a>
+      <div class="grass-divider hero-divider" aria-hidden="true"></div>
+    </section>
+
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow"><span class="section-number">01</span> THE PLAYER PROFILE</p><h2 id="about-title">Meet the Player<span class="heading-dot">.</span></h2><p>A little about the person behind the projects</p></div>
+        <div class="about-layout">
+          <div class="journal panel reveal"><div class="panel-label"><span aria-hidden="true">▤</span> A FEW PAGES FROM MY STORY <span class="label-dots" aria-hidden="true">▪ ▪ ▪</span></div><div class="journal-content">
+            <p>I'm a Computer Science student at Stony Brook University who loves getting involved on campus and meeting people from different backgrounds. I've also always been the go-to tech person in my family, whether it was fixing a phone or figuring out a computer. Helping them sparked my curiosity about how technology works and eventually led me to study CS. I still love figuring things out, especially when I can use what I've learned to make someone's life a little easier!</p>
+          </div></div>
+          <aside class="quick-glance reveal" aria-labelledby="campus-title">
+            <h3 id="campus-title" class="small-heading">A Quick Glance</h3>
+            <div class="campus-badges">
+              <div class="campus-badge campus-badge--home campus-badge--current"><span class="role-status role-status--inverted">Present</span><span class="badge-icon green" aria-hidden="true">▰</span><span><strong>B.S. Computer Science · May 2028</strong><small>Stony Brook University</small></span></div>
+              <a class="campus-badge campus-badge--current" href="https://www.sbcs.io/" target="_blank" rel="noopener noreferrer"><span class="role-status">Present</span><span class="badge-icon green" aria-hidden="true">⌘</span><span><strong>Secretary</strong><small>Stony Brook Computing Society</small></span><span class="link-arrow" aria-hidden="true">↗</span></a>
+              <a class="campus-badge campus-badge--current" href="https://it.stonybrook.edu/" target="_blank" rel="noopener noreferrer"><span class="role-status">Present</span><span class="badge-icon green" aria-hidden="true">▣</span><span><strong>Academic Software IT Support</strong><small>Division of Information Technology</small></span><span class="link-arrow" aria-hidden="true">↗</span></a>
+              <!-- No dedicated research lab URL has been confirmed. -->
+              <div class="campus-badge campus-badge--current"><span class="role-status">Present</span><span class="badge-icon gold" aria-hidden="true">⌁</span><span><strong>Undergraduate Research Assistant</strong><small>Arabic Language Acquisition Research</small></span></div>
+              <a class="campus-badge campus-badge--current" href="https://www.stonybrook.edu/orientation/first-year/" target="_blank" rel="noopener noreferrer"><span class="role-status">Present</span><span class="badge-icon blue" aria-hidden="true">✦</span><span><strong>Orientation Leader</strong><small>New Student &amp; Transition Programs</small></span><span class="link-arrow" aria-hidden="true">↗</span></a>
+              <a class="campus-badge" href="https://library.stonybrook.edu/" target="_blank" rel="noopener noreferrer"><span class="badge-icon gold" aria-hidden="true">▤</span><span><strong>Social Media Communications</strong><small>Stony Brook Libraries</small></span><span class="link-arrow" aria-hidden="true">↗</span></a>
+              <a class="campus-badge" href="https://www.stonybrook.edu/commcms/studentaffairs/sac/about_us/Join_the_team/index-1.php" target="_blank" rel="noopener noreferrer"><span class="badge-icon clay" aria-hidden="true">⚑</span><span><strong>Event Staff</strong><small>Student Engagement &amp; Activities</small></span><span class="link-arrow" aria-hidden="true">↗</span></a>
+              <a class="campus-badge" href="https://www3.cs.stonybrook.edu/~pramod.ganapathi/CSE113.html" target="_blank" rel="noopener noreferrer"><span class="badge-icon lavender" aria-hidden="true">&lt;/&gt;</span><span><strong>Teaching Assistant</strong><small>CSE 113</small></span><span class="link-arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </aside>
+        </div>
+        <div class="inventory panel reveal"><div class="inventory-intro"><p class="eyebrow">TOOLS FOR THE ADVENTURE</p><h3>My Inventory</h3><p>A few things I build with.</p></div><div class="inventory-items"><div class="inventory-group"><h4>Languages</h4><ul class="skill-tiles"><li>Java</li><li>Python</li><li>C/C++</li><li>JavaScript</li><li>TypeScript</li><li>HTML/CSS</li><li>SQL</li></ul></div><div class="inventory-group"><h4>Frameworks &amp; Tools</h4><ul class="skill-tiles"><li>React</li><li>Node.js</li><li>Express.js</li><li>PyTorch</li><li>Supabase</li><li>Stripe</li><li>Google APIs</li><li>REST APIs</li><li>DigitalOcean</li></ul></div></div></div>
+
+      </div>
+      <div class="grass-divider section-divider" aria-hidden="true"></div>
+    </section>
+
+    <section class="section experience-section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow"><span class="section-number">02</span> THE QUEST LOG</p><h2 id="experience-title">My Journey<span class="heading-dot">.</span></h2><p>Experience, leadership, and the things I've learned along the way</p></div>
+        <div class="timeline">
+          <article class="timeline-item reveal"><div class="timeline-date"><span class="timeline-marker" aria-hidden="true">⌁</span><span>SEP 2026 — PRESENT</span><small>Stony Brook, NY</small></div><div class="experience-card asset-frame"><div class="card-topline"><span class="category-tag">RESEARCH + SOFTWARE</span></div><h3>Undergraduate Research Assistant</h3><p class="organization">Arabic Language Acquisition Research Team, Stony Brook University</p><ul class="detail-list"><li>Collaborate with an 18-student interdisciplinary research team and faculty lead to redesign Arabic pronunciation training.</li><li>Maintain and extend a <strong>full-stack</strong> speech experiment platform hosted on <strong>DigitalOcean</strong>, using <strong>Node.js</strong>, <strong>Express.js</strong>, JavaScript, and <strong>SQLite</strong> to support 100-prompt recording sessions and persist participant data.</li><li>Research integration of an open-source Arabic phoneme recognition model and spectrogram-based acoustic analysis to detect pronunciation errors and design real-time feedback that identifies mispronounced segments.</li></ul><ul class="tech-tags" aria-label="Research technologies"><li>Node.js</li><li>Express.js</li><li>JavaScript</li><li>SQLite</li><li>DigitalOcean</li></ul><p class="research-note"><span aria-hidden="true">⌁</span> Pronunciation model integration is research in progress.</p></div></article>
+          <article class="timeline-item reveal"><div class="timeline-date"><span class="timeline-marker" aria-hidden="true">▣</span><span>JAN 2025 — PRESENT</span><small>Stony Brook, NY</small></div><div class="experience-card asset-frame"><div class="card-topline"><span class="category-tag blue-tag">TECHNOLOGY + TEACHING</span></div><h3>Academic Software IT Support</h3><p class="organization"><a href="https://it.stonybrook.edu/" target="_blank" rel="noopener noreferrer">Department of Information Technology, Stony Brook University <span aria-hidden="true">↗</span></a></p><ul class="detail-list"><li>Support Brightspace and academic tools for <strong>26,000+ students and faculty</strong>, troubleshooting issues and escalating cases.</li><li>Investigate issues across <strong>7,500+ courses</strong>, reproducing defects and documenting root causes for supervisors and vendors.</li><li>Lead 30-minute technology workshops for students and faculty across varying levels of technical experience.</li><li>Selected as <strong>1 of 11 interns from 250+ applicants</strong> and earned 1 of 5 return offers as an IT Support &amp; Specialist.</li></ul><div class="experience-highlights"><span><strong>26,000+</strong> students &amp; faculty</span><span><strong>7,500+</strong> courses supported</span></div></div></article>
+          <article class="timeline-item reveal"><div class="timeline-date"><span class="timeline-marker" aria-hidden="true">⚑</span><span>MAY 2026 — PRESENT</span><small>Stony Brook, NY</small></div><div class="experience-card asset-frame"><div class="card-topline"><span class="category-tag gold-tag">LEADERSHIP</span></div><h3>Secretary, Executive Board</h3><p class="organization"><a href="https://www.sbcs.io/" target="_blank" rel="noopener noreferrer">Stony Brook Computing Society <span aria-hidden="true">↗</span></a></p><ul class="detail-list"><li>Manage documentation for an 11-person leadership team for a <strong>300+ member club</strong> using ClickUp and Google Workspace.</li><li>Coordinate 20+ events per semester, aligning owners and deadlines across the executive board and committees.</li><li>Support SBUHacks sponsor outreach, helping secure partnerships toward a <strong>$20K+ fundraising goal</strong>.</li></ul><ul class="tech-tags" aria-label="Leadership tools"><li>ClickUp</li><li>Google Workspace</li><li>SBUHacks</li></ul></div></article>
+        </div>
+        <div class="campus-experience"><div class="subsection-heading"><div><p class="eyebrow">THE SIDE QUESTS MATTER, TOO</p><h3>Around Campus</h3><p>Other ways I've gotten involved at Stony Brook</p></div><span class="pixel-sprout" aria-hidden="true">⚘</span></div><div class="side-quest-grid">
+          <article class="side-quest panel reveal"><span class="badge-icon gold" aria-hidden="true">▤</span><div><p class="side-organization">Stony Brook Libraries</p><h4>Social Media Communications</h4>
+              <ul class="detail-list campus-detail-list">
+                <li>Co-owned a social media strategy for University Libraries, increasing engagement and TikTok followers 60% in six months.</li>
+                <li>Identified underused library services and developed campaigns around student needs to improve awareness and engagement.</li>
+                <li>Analyzed metrics and student feedback to prioritize content aligned with audience needs and organizational goals.</li>
+              </ul>
+              <a href="https://library.stonybrook.edu/" target="_blank" rel="noopener noreferrer">Visit organization <span aria-hidden="true">↗</span></a></div></article>
+          <article class="side-quest panel reveal"><span class="badge-icon clay" aria-hidden="true">⚑</span><div><p class="side-organization">Student Engagement &amp; Activities</p><h4>Event Staff</h4>
+              <ul class="detail-list campus-detail-list">
+                <li>Assisted with weekly campus events by managing logistics, setup, check-in, and breakdown for 150+ attendees</li>
+                <li>Collaborated with event coordinators to deliver programs that strengthened student engagement and campus life.</li>
+              </ul>
+              <a href="https://www.stonybrook.edu/commcms/studentaffairs/sac/about_us/Join_the_team/index-1.php" target="_blank" rel="noopener noreferrer">Visit organization <span aria-hidden="true">↗</span></a></div></article>
+          <article class="side-quest panel reveal"><span class="badge-icon blue" aria-hidden="true">✦</span><div><p class="side-organization">New Student &amp; Transition Programs</p><h4>Orientation Leader</h4>
+              <ul class="detail-list campus-detail-list">
+                <li>Coordinated New Seawolf Welcome orientation logistics for 6,000+ new and transfer students.</li>
+                <li>Led interactive campus tours to introduce students to key resources, services, and facilities.</li>
+                <li>Directed small group sessions of 25–50 students, fostering engagement and peer-to-peer connections.</li>
+              </ul>
+              <a href="https://www.stonybrook.edu/orientation/first-year/" target="_blank" rel="noopener noreferrer">Visit organization <span aria-hidden="true">↗</span></a></div></article>
+          <article class="side-quest panel reveal"><span class="badge-icon lavender" aria-hidden="true">&lt;/&gt;</span><div><p class="side-organization">CSE 113</p><h4>Teaching Assistant</h4>
+              <ul class="detail-list campus-detail-list">
+                <li>Supported students in understanding course concepts and assignments through weekly office hours and Piazza support.</li>
+                <li>Proctored exams and converted 100+ lecture slides into accessible HTML format to improve course material usability.</li>
+              </ul>
+              <a href="https://www3.cs.stonybrook.edu/~pramod.ganapathi/CSE113.html" target="_blank" rel="noopener noreferrer">View course <span aria-hidden="true">↗</span></a></div></article>
+        </div></div>
+      </div>
+      <div class="grass-divider section-divider" aria-hidden="true"></div>
+    </section>
+
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="container"><div class="section-heading projects-heading"><div><p class="eyebrow"><span class="section-number">03</span> THE BUILDS INVENTORY</p><h2 id="projects-title">My Builds<span class="heading-dot">.</span></h2><p>A collection of things I've brought to life</p></div><span class="build-count">3 BUILDS, MANY LESSONS</span></div>
+        <!-- Edit projects and their optional links in the PROJECTS array in script.js. -->
+        <div id="project-list" class="project-list"></div>
+        <div class="additional-builds">
+          <div class="subsection-heading">
+            <div>
+              <p class="eyebrow">A FEW MORE THINGS I'VE BUILT</p>
+              <h3>More from my workbench</h3>
+            </div>
+          </div>
+          <div id="additional-project-list" class="additional-project-grid"></div>
+        </div>
+        <noscript><div class="panel no-script"><p>The detailed project cards need JavaScript. Projects: Blue Nile Catering Platform, Wallsense, FollowUp, CookStack, and World Happiness.</p><p>Explore all five repositories on <a href="https://github.com/LaraGouda" target="_blank" rel="noopener noreferrer">Lara's GitHub</a>, or visit <a href="https://www.bluenilecatering.net" target="_blank" rel="noopener noreferrer">Blue Nile Catering</a> and <a href="https://www.followup.codes" target="_blank" rel="noopener noreferrer">FollowUp</a>.</p></div></noscript>
+      </div>
+      <div class="grass-divider section-divider" aria-hidden="true"></div>
+    </section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-inner"><div class="mail-art" aria-hidden="true"><img src="assets/other-original-artwork/mailbox.svg" width="136" height="144" alt="" loading="lazy"></div><p class="eyebrow"><span class="section-number">04</span> THE FINAL CHECKPOINT</p><h2 id="contact-title">Let's Connect<span class="heading-dot">!</span></h2><p class="contact-copy">Whether you want to talk about a project, collaborate on something, or just say hi, I'd love to hear from you!</p><div class="contact-buttons"><a class="button button-primary" href="mailto:laragoudaw@gmail.com"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 4h16v12H2Zm2 2v1l6 4 6-4V6l-6 4Zm0 4v4h12v-4l-6 4Z"/></svg>Email Me <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="https://github.com/LaraGouda" target="_blank" rel="noopener noreferrer"><span class="contact-symbol" aria-hidden="true">&lt;/&gt;</span>GitHub <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="https://www.linkedin.com/in/lara-gouda/" target="_blank" rel="noopener noreferrer"><span class="contact-symbol" aria-hidden="true">in</span>LinkedIn <span aria-hidden="true">↗</span></a></div><a class="email-text" href="mailto:laragoudaw@gmail.com">laragoudaw@gmail.com</a><p class="contact-signoff">Thanks for stopping by my little world. <span aria-hidden="true">♡</span></p></div>
+      <div class="grass-divider footer-divider" aria-hidden="true"></div>
+    </section>
   </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Lara Gouda <span aria-hidden="true">•</span> Built one block at a time.</p>
+      <a class="back-to-top" href="#home">BACK TO TOP <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
 </body>
 </html>

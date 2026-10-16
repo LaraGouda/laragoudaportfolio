@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" shape-rendering="crispEdges">
+  <title>An open recipe book with ingredients and a wooden spoon</title>
+  <path fill="#f2e6cd" d="M0 0h320v240H0z"/>
+  <path fill="#d9c5a1" d="M38 190h244v12H38z"/>
+  <path fill="#6f8b5c" d="M38 60h106v8h16v-8h106v132H38z"/>
+  <path fill="#456b45" d="M38 60h8v132h-8zm108 8h14v124h-14zm112-8h8v132h-8z"/>
+  <path fill="#fff7e2" d="M48 50h80v6h16v126h-16v-6H48zm112 6h16v-6h80v126h-80v6h-16z"/>
+  <path fill="#dfcfaa" d="M134 62h10v120h-10zm26 0h10v120h-10z"/>
+  <path fill="#b4805b" d="M66 72h50v6H66zm112 0h58v6h-58z"/>
+  <path fill="#8d9c74" d="M178 94h50v4h-50zm0 16h58v4h-58zm0 16h46v4h-46zm0 16h54v4h-54zm0 16h38v4h-38z"/>
+  <path fill="#d7b36d" d="M66 126h54v14H66zm6 14h42v8H72z"/>
+  <path fill="#7b9a58" d="M70 112h16v14H70zm24-8h16v22H94zm-12-6h14v14H82z"/>
+  <path fill="#bf7960" d="M84 118h14v12H84z"/>
+  <path fill="#e7bb68" d="M214 50h10v32l-5-5-5 5z"/>
+  <path fill="#a57c50" d="M272 82h8v8h8v24h-8v8h-8v-8h-8V90h8zm0 40h8v70h-8z"/>
+  <path fill="#c8a06b" d="M272 90h8v24h-8zm0 38h4v56h-4z"/>
+  <path fill="#6c8b57" d="M20 150h10v10h12v8H30v12H20v-12H8v-8h12z"/>
+  <path fill="#e8c66a" d="M276 34h6v-6h6v6h6v6h-6v6h-6v-6h-6z"/>
+</svg>
